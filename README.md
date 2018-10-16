@@ -23,15 +23,14 @@
 
 #### Solutions 
 <details>
-    <summary><strong>Click to Reveal...</strong><summary>
+    <summary><strong>Click to Reveal...</strong></summary>
 
-    ```javascript
-    function printArr(param){
-        var string = ""
-        for(let i = 0; i < param.length; i++){
-            console.log(string += `${param[i]} \n`)
-        }
+```javascript
+function printArr(param){
+    var string = ""
+    for(let i = 0; i < param.length; i++){
+        console.log(string += `${param[i]} \n`)
     }
-    ```
-
+}
+```
 </details>
