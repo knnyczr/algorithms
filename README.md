@@ -112,6 +112,8 @@ function largest(){
 ```
 </details>
 
+____
+
 ### Print a chess Board 
 
 Write a function that creates a chest board out of a string that represents an 8x8 chess board. 
