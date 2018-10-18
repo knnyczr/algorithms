@@ -1,6 +1,8 @@
 # Algorithms
 
-For Developer's it's important to practice thinking critically, and coming up with solutions with the language you want to practice with. The following problems can be solved with any programming language you can think of. For this Repo we'll be using javascript. 
+For developers it's important to practice thinking critically, practice problem solving, and think of clean ways to execute a task efficiently. We know our computers can run a millions, even hundreds of mathematical problems in seconds. Writing efficient clean code can help open and run our applications, thus elevating our user experience.
+
+
 
 ### Print an Array 
  Write a function, call it whatever seems appropriate, and have it print all the items in an array. 
@@ -157,3 +159,93 @@ function chessBoard(){
 <span>Source:</span> [Eloquent Javascript](http://eloquentjavascript.net/code/#2.3)
 
 ____
+
+### Palindrome
+
+Palindromes can be a word, a number, a phrase, a series of characters that is the same forwards and backwards. 
+
+Have a function that takes in a string, checks true or false if the word or number is a paindrome. 
+
+**Inputs/Outputs:**
+
+```javascript
+'Anna.'
+=> true
+'not a palindrome'
+=> false
+'Civic'
+=> true
+'A man, a plan, a canal. Panama'
+=> true
+'Kayak'
+=> true
+'Never odd or even'
+=> true
+'Level'
+=> true
+'Almostomla'
+=> false
+'1 eye for of 1 eye'
+=> false
+'Madam'
+=> true
+'Mom'
+=> true
+'Noon'
+=> true
+'Racecar'
+=> true
+```
+
+<details>
+<summary><strong>hints...</strong></summary>
+
+* The toLowerCase() method to return the calling string value converted to lowercase.
+* The replace() method to return a new string with some or all matches of a pattern replaced by a replacement. We will use one of the RegExp we just created earlier.
+* The split() method splits a String object into an array of strings by separating the string into sub strings.
+* The reverse() method reverses an array in place. The first array element becomes the last and the last becomes the first.
+* The join() method joins all elements of an array into a string.
+* the toString() converts an interger to a string.
+
+</details>
+
+**Solutions**
+I have seen many ways to create palindrome functions, I challenge you to think of cleaner, more efficient code than this. 
+
+<details>
+<summary><strong>Click to reveal...</strong></summary>
+
+```javascript
+function isPalindrome(s) {
+  var s = s.toString().toLowerCase();
+  let arr = s.split(' ').join('').split(''); 
+  for (let i = 0; i < arr.length / 2; i += 1) {
+    if (arr[i] !== arr[arr.length - (i + 1)]) {
+      return false;
+    }
+  }
+  return true;
+}
+```
+
+</details>
+
+<details>
+<summary><strong>Click to reveal... </strong> </summary>
+
+```javascript
+function palindrome(str) {
+  var re = /[\W_]/g;
+  var lowRegStr = str.toLowerCase().replace(re, '');
+  var reverseStr = lowRegStr.split('').reverse().join(''); 
+  return reverseStr === lowRegStr;
+}
+```
+**\W** removes all non-alphanumeric characters
+* \W matches any non-word character
+* \W is equivalent to [^A-Za-z0–9_]
+* \W matches anything that is not enclosed in the brackets
+**^_** matches anything that does not enclose _ (this is case specific please check the freecodecamp source.)
+**/g** the g flag is used for global search
+[Source](https://medium.freecodecamp.org/two-ways-to-check-for-palindromes-in-javascript-64fea8191fd7)
+<details>
