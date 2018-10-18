@@ -246,6 +246,8 @@ function palindrome(str) {
 * \W is equivalent to [^A-Za-z0–9_]
 * \W matches anything that is not enclosed in the brackets
 **^_** matches anything that does not enclose _ (this is case specific please check the freecodecamp source.)
+
 **/g** the g flag is used for global search
+
 [Source](https://medium.freecodecamp.org/two-ways-to-check-for-palindromes-in-javascript-64fea8191fd7)
-<details>
+</details>
