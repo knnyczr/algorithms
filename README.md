@@ -8,11 +8,11 @@ For Developer's it's important to practice thinking critically, and coming up wi
 **Inputs:** ['christina', 'nando', 'kenny']
 
 **Output:**
-    ```javascript
-        christina
-        nando
-        kenny
-    ```
+```javascript
+    christina
+    nando
+    kenny
+```
 <details>
  <summary><strong>hints ...</strong></summary>
 
@@ -27,14 +27,14 @@ For Developer's it's important to practice thinking critically, and coming up wi
 <details>
     <summary><strong>Click to Reveal...</strong></summary>
 
-    ```javascript
-    function printArr(param){
-        var string = "";
-        for(let i = 0; i < param.length; i++){
-            console.log(string += `${param[i]} \n`);
-        }
+```javascript
+function printArr(param){
+    var string = "";
+    for(let i = 0; i < param.length; i++){
+        console.log(string += `${param[i]} \n`);
     }
-    ```
+}
+```
 </details>
 
 ____
@@ -60,29 +60,29 @@ Write a function, name it whatever seems appropriate, and return/log in the cons
 <details>
     <summary><strong>Click to reveal...</strong></summary>
 
-    ```javascript
-    var reversedString = "";
-    function reverse(param){
-        for(let i = (param.length - 1); i>=0; i--){
-            reversedString += param[i]; 
-            console.log(reversedString)
-        }
+```javascript
+var reversedString = "";
+function reverse(param){
+    for(let i = (param.length - 1); i>=0; i--){
+        reversedString += param[i]; 
+        console.log(reversedString)
     }
-    ```
+}
+```
 </details>
  
 <details>
     <summary><strong>Click to reveal...</strong></summary>
 
-    ```javascript
-    function reverse(param) {
-        const reverse = [];
-        for (let i = (param.length - 1); i >= 0; i -= 1) {
-            reverse.push(param[i]);
-        }
-        console.log(reverse.join(''))
+```javascript
+function reverse(param) {
+    const reverse = [];
+    for (let i = (param.length - 1); i >= 0; i -= 1) {
+        reverse.push(param[i]);
     }
-    ```
+    console.log(reverse.join(''))
+}
+```
 </details>
 
 #### Source: [leetcode](https://leetcode.com/problems/reverse-string/)
@@ -100,15 +100,15 @@ Write a function call it whatever you ddeem appropriate, return/log in the conso
 <details>
     <summary><strong>Click to reveal...</strong><summary>
 
-    ```javascript
-    function largest(){
-        let num = num[0]
-        num.forEach((d) => {
-            if( d > largest ) { largest = d }
-        })
-        return largest
-    }
-    ```
+```javascript
+function largest(){
+    let num = num[0]
+    num.forEach((d) => {
+        if( d > largest ) { largest = d }
+    })
+    return largest
+}
+```
 </details>
 
 ### Print a chess Board 
