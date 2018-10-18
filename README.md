@@ -93,12 +93,13 @@ ____
 Write a function call it whatever you ddeem appropriate, return/log in the console the largest value from the array. 
 
 **Input:** [1,2,3,6,9,24,12]
+
 **Output:** 24
 
 ### Solution
 
 <details>
-    <summary><strong>Click to reveal...</strong><summary>
+<summary><strong>Click to reveal...</strong></summary>
 
 ```javascript
 function largest(){
