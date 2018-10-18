@@ -8,11 +8,11 @@ For Developer's it's important to practice thinking critically, and coming up wi
 **Inputs:** ['christina', 'nando', 'kenny']
 
 **Output:**
-```javascript
-    christina
-    nando
-    kenny
-```
+    ```javascript
+        christina
+        nando
+        kenny
+    ```
 <details>
  <summary><strong>hints ...</strong></summary>
 
@@ -27,14 +27,14 @@ For Developer's it's important to practice thinking critically, and coming up wi
 <details>
     <summary><strong>Click to Reveal...</strong></summary>
 
-```javascript
-function printArr(param){
-    var string = "";
-    for(let i = 0; i < param.length; i++){
-        console.log(string += `${param[i]} \n`);
+    ```javascript
+    function printArr(param){
+        var string = "";
+        for(let i = 0; i < param.length; i++){
+            console.log(string += `${param[i]} \n`);
+        }
     }
-}
-```
+    ```
 </details>
 
 ____
